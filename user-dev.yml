@@ -22,3 +22,5 @@ eureka:
     ip-address: 127.0.0.1
     lease-renewal-interval-in-seconds: 30
     lease-expiration-duration-in-seconds: 30
+test:
+  name: my_error_test
