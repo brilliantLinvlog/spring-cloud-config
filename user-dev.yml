@@ -1,0 +1,24 @@
+server:
+  port: ${port:9091}
+#
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springcloud
+    username: root
+    password:
+  application:
+    name: user-service
+#
+mybatis:
+  type-aliases-package: com.linvlog.pojo
+#
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka
+  instance:
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
+    lease-renewal-interval-in-seconds: 30
+    lease-expiration-duration-in-seconds: 30
